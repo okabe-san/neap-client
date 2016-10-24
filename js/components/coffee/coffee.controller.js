@@ -10,12 +10,10 @@
 
   function coffeeController($scope, coffeeService) {
     /*jshint validthis: true */
-    // console.log(coffeeService.test);
     const vm = this;
     vm.form = false;
     vm.coffeeObj = init();
-    vm.coffeeObj = {};
-    this.showForm = function () {
+    vm.showForm = function() {
       vm.form = true;
     };
     vm.addCoffee = function() {
@@ -49,16 +47,17 @@
   }
 
   function init() {
-   const coffeeObj = {
-     name: 'Chrismas Blend',
-     roaster: 'Sweet Bloom',
-     origin: 'Derek\'s backyard',
-     roast: 'Medium',
-     caffeine: 22,
-     decaf: 'false',
-     price: 888888,
-     quantity: 1
-   };
-   return coffeeObj;
- }
+    const coffeeObj = {
+      name: 'Chrismas Blend',
+      roaster: 'Sweet Bloom',
+      origin: 'Derek\'s backyard',
+      roast: 'Medium',
+      caffeine: 22,
+      decaf: 'false',
+      price: 888888,
+      quantity: 1
+    };
+    return coffeeObj;
+  }
+
 })();

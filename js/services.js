@@ -8,7 +8,7 @@
 
   coffeeService.$inject = ['$http'];
 
-  const baseURL = 'http://localhost:8000/coffee/';
+  const baseURL = 'http://fierce-beyond-69097.herokuapp.com/coffee/';
 
   function coffeeService($http) {
     /*jshint validthis: true */
