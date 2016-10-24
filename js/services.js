@@ -19,7 +19,7 @@
       return $http.get(`${baseURL}${id}`);
     };
     this.addCoffee = function (coffee) {
-      return $http.post('baseURL', coffee);
+      return $http.post(baseURL, coffee);
     };
   }
 
