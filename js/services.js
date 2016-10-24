@@ -11,7 +11,7 @@
   function coffeeService($http) {
     /*jshint validthis: true */
     this.getAllCoffee = function () {
-      return $http.get('http://localhost:8888/');
+      return $http.get('https://fierce-beyond-69097.herokuapp.com/coffee');
     };
     this.test = 'test';
   }
