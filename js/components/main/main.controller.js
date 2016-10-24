@@ -11,6 +11,7 @@
   function mainController($scope) {
     /*jshint validthis: true */
     this.greeting = 'Hello World!';
+
   }
 
 })();
