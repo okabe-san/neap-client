@@ -8,11 +8,19 @@
 
   coffeeService.$inject = ['$http'];
 
+  const baseURL = 'http://localhost:8000/coffee/';
+
   function coffeeService($http) {
     /*jshint validthis: true */
     this.getAllCoffee = function () {
-      return $http.get('https://fierce-beyond-69097.herokuapp.com/coffee');
+      return $http.get(baseURL);
     };
-    this.test = 'test';
+    this.getSingleCoffee = function (id) {
+      return $http.get(`${baseURL}${id}`);
+    };
+    this.addCoffee = function (coffee) {
+      return $http.post('baseURL', coffee);
+    };
   }
+
 })();
